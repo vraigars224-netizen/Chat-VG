@@ -1,60 +1,16 @@
 <!doctype html>
 <html lang="fr">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="theme-color" content="#075e54">
-  <meta name="description" content="VG Chat — une application de messagerie en développement.">
-  <title>VG Chat</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-  <main class="app-shell">
-    <header class="topbar">
-      <div class="brand">
-        <div class="brand-mark" aria-hidden="true">VG</div>
-        <div><h1>VG Chat</h1><p>Connectés, partout.</p></div>
-      </div>
-      <span class="demo-badge">MODE DÉMO</span>
-    </header>
-
-    <section class="welcome-card" aria-labelledby="welcome-title">
-      <div class="welcome-copy">
-        <p class="eyebrow">BIENVENUE</p>
-        <h2 id="welcome-title">Reste proche de ceux qui comptent.</h2>
-        <p>Crée ton profil de démonstration pour découvrir la première interface de VG Chat.</p>
-      </div>
-      <div class="chat-art" aria-hidden="true">
-        <div class="bubble bubble-one">Salut !</div>
-        <div class="bubble bubble-two">Bienvenue sur VG 👋</div>
-        <div class="bubble bubble-three">À bientôt</div>
-      </div>
-    </section>
-
-    <section class="form-card" aria-labelledby="form-title">
-      <div class="section-heading">
-        <div><p class="eyebrow">PHASE 1 · FONDATIONS</p><h2 id="form-title">Créer un profil démo</h2></div>
-        <span class="step">01 / 06</span>
-      </div>
-      <form id="profile-form">
-        <label for="display-name">Nom à afficher</label>
-        <input id="display-name" name="displayName" type="text" maxlength="30" placeholder="Ex. Mamadou" autocomplete="nickname" required>
-        <label for="username">Nom d'utilisateur</label>
-        <div class="input-prefix"><span>@</span><input id="username" name="username" type="text" minlength="3" maxlength="20" pattern="[A-Za-z0-9_]+" placeholder="mamadou123" autocomplete="username" required></div>
-        <p class="hint">3 à 20 caractères : lettres, chiffres ou tiret bas.</p>
-        <button class="primary-button" type="submit">Découvrir mon espace <span aria-hidden="true">→</span></button>
-      </form>
-      <p class="notice"><strong>Important :</strong> cette version est une maquette locale. Elle ne crée pas de vrai compte et ne permet pas encore d'envoyer des messages.</p>
-    </section>
-
-    <section id="profile-preview" class="profile-card hidden" aria-live="polite">
-      <div class="avatar" id="avatar">VG</div>
-      <div class="profile-info"><p class="eyebrow">PROFIL DE DÉMONSTRATION</p><h2 id="preview-name">Utilisateur</h2><p id="preview-username">@utilisateur</p></div>
-      <button id="edit-profile" class="secondary-button" type="button">Modifier</button>
-    </section>
-
-    <footer><span>VG Chat</span><span>Prototype · Phase 1</span></footer>
-  </main>
-  <script src="js/app.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1" />
+    <meta name="theme-color" content="#10141A" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="icon" href="/icon-192.png" />
+    <link rel="apple-touch-icon" href="/icon-192.png" />
+    <title>Coffre — messagerie chiffrée</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
